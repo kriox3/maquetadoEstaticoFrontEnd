@@ -1,0 +1,78 @@
+.distribucion {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  #cabecera {
+    margin: auto;
+    margin-top: 10px;
+    padding: 20px;
+    width: 90%;
+    text-align: center;
+    border-top-left-radius: 80px;
+    border-bottom-right-radius: 80px;
+    background-color: #727272;
+    box-shadow: 0 5px #505050;
+    transform: translateY(2px);
+  }
+
+  #botonera {
+    width: 90%;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  #cuerpo {
+    width: 100%;
+    margin: auto;
+  }
+
+  .boton {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 15px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #046360;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 3px #505050;
+  }
+
+  .botonMenu {
+    display: inline-block;
+    padding: 15px 5px;
+    font-size: 15px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #3a3a3a;
+    border: none;
+    border-radius: 15px;
+  }
+
+  .botonMenu:hover {
+    background-color: #525252;
+  }
+
+  .botonMenu:active {
+    background-color: #747474;
+    transform: translateY(4px);
+  }
+
+  .boton:hover {
+    background-color: #047975;
+  }
+
+  .boton:active {
+    background-color: #07a19c;
+    box-shadow: 0 3px #2d2d2d;
+    transform: translateY(4px);
+  }
