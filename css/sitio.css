@@ -76,3 +76,104 @@
     box-shadow: 0 3px #2d2d2d;
     transform: translateY(4px);
   }
+
+  /* BOTONES DE EDICION GENERAL */
+
+  .cajaf{
+    /* position: relative;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px; */
+    z-index: 100000;
+  }
+  .cajaf:hover .caja1{
+    visibility: visible;
+    bottom: 60px;
+  }
+  .cajaf:hover .caja2{
+    visibility: visible;
+    bottom: 120px;
+  }
+  .caja2:hover:before{
+    visibility: visible;
+    color:#000;
+  }
+  .caja1:hover:before{
+    visibility: visible; 
+    color:#000;
+  }
+  .btn_roundf{
+    position: absolute;
+    bottom:0 ;
+    right: 0;
+    border:1px solid #303030;
+    background: #303030;
+    color:#00ff08da;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    z-index: 90090; 
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    
+  }
+  .caja1::before{
+    content: "Editar";
+    background: #00ff08da;
+    border:1px solid #00ff08da;
+    position: absolute;
+    left: -90px; 
+    padding: .5em;
+    visibility: hidden;
+  }
+  .caja2::before{
+    content: "Eliminar";
+    background: #e41f1f;
+    border:1px solid #e41f1f;
+    position: absolute;
+    left: -110px; 
+    padding: .5em;
+    visibility: hidden;
+  }
+  .caja1{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border:1px solid #00ff08da;
+    background: #00ff08da;
+    color: #fff;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    z-index: 90080; 
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    -webkit-transition: all .5s;
+    visibility: hidden;
+  }
+  .caja2{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border:1px solid #e41f1f;
+    background: #e41f1f;
+    color:#fff;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    z-index: 9070; 
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    visibility: hidden;
+    -webkit-transition: all 1s;
+  }

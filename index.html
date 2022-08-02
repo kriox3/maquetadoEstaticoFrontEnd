@@ -5,34 +5,115 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Inicio</title>
-    <!-- CSS only -->
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
       crossorigin="anonymous"
     />
-    <link href="css/sitio.css" rel="stylesheet" />
-    <link href="css/animacion.css" rel="stylesheet" />
+    <link href="/css/sitio.css" rel="stylesheet" />
+    <link href="/css/animacion.css" rel="stylesheet" />
   </head>
+
   <body style="background-color: #404040; color: white" class="area">
-    <div id="cabecera" class="distribucion">
+    <div
+      class="modal fade"
+      id="iniciarSesion"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="iniciarSesionLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div
+          class="modal-content"
+          style="background-color: #404040; color: white"
+        >
+          <div class="modal-header">
+            <h5 class="modal-title" id="iniciarSesionLabel">Inicie Sesion</h5>
+            <i
+              class="bx bxs-x-square bx-tada bx-lg bx-burst-hover"
+              style="color: #00eeff"
+              data-bs-dismiss="modal"
+              aria-bs-label="Close"
+            ></i>
+          </div>
+          <div class="modal-body">
+            <form>
+              <img class="mb-4" src="/img/APlogo.png" alt="" width="150" />
+              <h1 class="h3 mb-3 fw-normal">Ingrese sus credenciales</h1>
+
+              <div class="form-floating">
+                <input
+                  type="email"
+                  class="form-control"
+                  id="floatingInput"
+                  placeholder="nombre@ejemplo.com"
+                />
+                <label for="floatingInput" class="text-dark">Email</label>
+              </div>
+              <div class="form-floating">
+                <input
+                  type="password"
+                  class="form-control"
+                  id="floatingPassword"
+                  placeholder="Contraseña"
+                />
+                <label for="floatingPassword" class="text-dark"
+                  >Contraseña</label
+                >
+              </div>
+
+              <div class="checkbox mb-3">
+                <label>
+                  <input type="checkbox" value="remember-me" /> Recordame
+                </label>
+              </div>
+              <button class="w-100 btn btn-lg btn-primary" type="submit">
+                Ingresar
+              </button>
+            </form>
+          </div>
+          <!--  <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            <button type="button" class="btn btn-primary">Guardar</button>
+          </div> -->
+        </div>
+      </div>
+    </div>
+
+    <div
+      id="cabecera"
+      class="distribucion"
+      style="
+        background-image: url('/img/banner2.webp');
+        background-repeat: no-repeat;
+        background-position: center;
+      "
+    >
       <img
         src="img/APlogo.png"
         alt="Argentina Programa"
         title="Argentina Programa"
         width="130px"
       />
-      <div><h1>Porfolio</h1></div>
-      <div class="botonMenu">
-        <img
-          src="img/menu-icon.svg"
-          alt="Menu de usuario"
-          title="Menu de usuario"
-          width="30px"
-          class="text-light; mx-2"
-        />
+      <div>
+        <h1 class="heading-black" style="margin-right: 80px; font-weight: 900">
+          Portfolio FrontEnd Estatico
+        </h1>
       </div>
+
+      <i
+        class="bx bx-user-circle bx-tada bx-lg bx-burst-hover"
+        style="color: #fff"
+        data-bs-toggle="modal"
+        data-bs-target="#iniciarSesion"
+      ></i>
     </div>
 
     <div
@@ -49,7 +130,11 @@
     </div>
 
     <section>
-      <div class="container">
+      <div
+        class="container alert"
+        style="background-color: #ffffff1e; border-radius: 20px"
+        role="alert"
+      >
         <div class="row vh-md-100">
           <div
             class="col-md-8 col-sm-10 col-12 mx-auto my-auto text-center"
@@ -67,36 +152,88 @@
               possimus nulla rem ab nesciunt quasi nam veritatis, alias nobis
               modi qui harum recusandae cum, inventore fugit obcaecati molestias
               aspernatur iste eius! Accusamus aperiam nihil sapiente. Ea
-              incidunt libero maiores. Deserunt nobis debitis veritatis nam
-              architecto rem id eos, libero vero tempora necessitatibus magni
-              amet corrupti porro quibusdam, incidunt molestiae nemo quod
-              delectus blanditiis! Nam, eaque. Ipsam vitae illo quisquam
-              pariatur! Accusantium delectus repudiandae perferendis, vero aut
-              quaerat omnis, ab impedit magni harum distinctio necessitatibus
-              earum consectetur laborum quisquam porro facere, nobis sint
-              tempora nostrum ea? Id quia suscipit fuga itaque velit molestiae
-              ex perferendis asperiores! Sunt veritatis quos delectus error
-              veniam beatae, exercitationem voluptas cum, eaque nihil, quia
-              natus! Quam, tempore sint? At, debitis. Accusantium. Laboriosam
-              placeat veritatis libero reprehenderit. Eaque ea quibusdam velit
-              repellendus minima assumenda, quas vitae vel officiis placeat
-              veritatis magni et eligendi ratione, possimus iste tempora sequi
-              sapiente perferendis maxime eveniet? Quis at sit dolores eaque
-              numquam, esse blanditiis laborum atque voluptate consequatur ipsa
-              labore. Dicta voluptatum similique maiores, perspiciatis magnam
-              non soluta aspernatur libero, harum aut sapiente unde fuga iste!
-              Facilis unde quam ipsa omnis laboriosam reiciendis quibusdam
-              minima, enim similique qui cupiditate? Voluptatem fugit, deserunt,
-              tempora ut veniam animi facere quam libero ratione neque sunt
-              obcaecati repellendus minus alias? Hic reiciendis quas labore
-              accusamus. Iure libero velit deleniti, natus quas asperiores at
-              minus, nam ad, labore aperiam praesentium odit temporibus
-              voluptate nostrum ut vero cumque rerum aliquam reiciendis eveniet!
-              Facilis consequuntur, quas error illum libero, exercitationem nisi
-              quo sint odio blanditiis earum voluptate quibusdam tenetur ratione
-              itaque sunt, ex unde laboriosam impedit. Ipsam velit id enim
-              voluptatibus fugiat doloribus.
+              incidunt libero maiores.
             </p>
+          </div>
+          <div class="cajaf">
+            <a
+              class="btn_roundf"
+              title="Menu Administrador"
+              alt="Menu Administrador"
+              style="text-decoration: none"
+              ><i class="bx bx-expand-horizontal bx-md"></i
+            ></a>
+            <a
+              class="caja1"
+              href="#"
+              alt="Editar"
+              title="Editar"
+              style="text-decoration: none"
+              ><i class="bx bxs-edit bx-md"></i
+            ></a>
+            <a
+              class="caja2"
+              href="#"
+              alt="Eliminar"
+              title="Eliminar"
+              style="text-decoration: none"
+              ><i class="bx bxs-x-square bx-md"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div
+        class="container alert"
+        style="background-color: #ffffff1e; border-radius: 20px"
+        role="alert"
+      >
+        <div class="row vh-md-100">
+          <div
+            class="col-md-8 col-sm-10 col-12 mx-auto my-auto text-center"
+            id="cuerpo"
+          >
+            <h1 class="heading-black">
+              Lorem ipsum dolor sit amet consectetur Perferendis similique minus
+              rem
+            </h1>
+            <p class="lead py-3" style="font-size: 1rem">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea
+              voluptatum eius excepturi accusamus aliquam saepe quasi assumenda
+              rem impedit laboriosam deleniti deserunt modi earum iste suscipit,
+              optio voluptates, praesentium repudiandae! Nostrum impedit neque a
+              possimus nulla rem ab nesciunt quasi nam veritatis, alias nobis
+              modi qui harum recusandae cum, inventore fugit obcaecati molestias
+              aspernatur iste eius! Accusamus aperiam nihil sapiente. Ea
+              incidunt libero maiores.
+            </p>
+          </div>
+          <div class="cajaf">
+            <a
+              class="btn_roundf"
+              title="Menu Administrador"
+              alt="Menu Administrador"
+              style="text-decoration: none"
+              ><i class="bx bx-expand-horizontal bx-md"></i
+            ></a>
+            <a
+              class="caja1"
+              href="#"
+              alt="Editar"
+              title="Editar"
+              style="text-decoration: none"
+              ><i class="bx bxs-edit bx-md"></i
+            ></a>
+            <a
+              class="caja2"
+              href="#"
+              alt="Eliminar"
+              title="Eliminar"
+              style="text-decoration: none"
+              ><i class="bx bxs-x-square bx-md"></i
+            ></a>
           </div>
         </div>
       </div>
@@ -145,23 +282,29 @@
     </footer>
 
     <!-- Animacion del fondo -->
-        <ul class="circles">
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul>
+    <ul class="circles">
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
   </body>
 </html>
-<!-- JavaScript Bundle with Popper -->
+
 <script
   src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
   integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
   crossorigin="anonymous"
 ></script>
+
+<script>
+  $("#myModal").on("shown.bs.modal", function () {
+    $("#myInput").trigger("focus");
+  });
+</script>
